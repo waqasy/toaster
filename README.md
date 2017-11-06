@@ -15,7 +15,7 @@ $ npm install mu2.toaster
 ``` javascript
 import toast from './mu2.toaster'
 
-// Use in a vue file
+// Integrated usage
 toast({
   type: 'loading',
   text: 'Loading',
