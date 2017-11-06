@@ -6,8 +6,6 @@ An easy use Toast.
 
 ### Installation
 
-Prerequisites: [Vue.js](https://github.com/vuejs/vue) (>=2.x).
-
 ``` bash
 $ npm install mu2.toaster
 ```
@@ -15,56 +13,55 @@ $ npm install mu2.toaster
 ### Usage
 
 ``` javascript
-import Toast from 'mu2.toaster'
-Vue.use(Toast)
+import toast from './mu2.toaster'
 
 // Use in a vue file
-this.$toast({
+toast({
   type: 'loading',
   text: 'Loading',
   duration: 0	
 })
 
 // Loading
-this.$toast.loading('Loading')
+toast.loading('Loading')
 // Or
-this.$toast.loading({
+toast.loading({
   text: 'Loading'
 })
 
 // Success
-this.$toast.success('Success')
+toast.success('Success')
 // Or
-this.$toast.success({
+toast.success({
   text: 'Success',
   duration: 5000
 })
 
 // Error
-this.$toast.error('Error')
+toast.error('Error')
 // Or
-this.$toast.error({
+toast.error({
   text: 'Error',
   duration: 5000
 })
 
 // Warning
-this.$toast.warning('Warning')
+toast.warning('Warning')
 // Or
-this.$toast.warning({
+toast.warning({
   text: 'Warning',
   duration: 5000
 })
 
 // Toast
-this.$toast.toast('Toast')
+toast.toast('Toast')
 // Or
-this.$toast.toast({
+toast.toast({
   text: 'Toast',
   duration: 5000
 })
 
 // Dismiss
-this.$toast.dismiss()
+toast.dismiss()
 
 ```
