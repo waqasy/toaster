@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>mu2.toaster</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="format-detection" content="telephone=no,email=no">
+  <style>
+    pre {
+      background: #f8f8f8;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Loading</h3>
+  <button id="t-loading">Show Loading</button>
+  <pre>
+    toast.loading('Loading')
+  </pre>
+  <h3>Text</h3>
+  <button id="t-text">Show Text</button>
+  <pre>
+    toast.show('Text', 5)
+  </pre>
+  <h3>Success</h3>
+  <button id="t-success">Show Success</button>
+  <pre>
+    toast.success('Success', 5)
+  </pre>
+  <h3>Warning</h3>
+  <button id="t-warning">Show Warning</button>
+  <pre>
+    toast.warning('Warning', 5)
+  </pre>
+  <h3>Error</h3>
+  <button id="t-error">Show Error</button>
+  <pre>
+    toast.error('Error', 5)
+  </pre>
+  <h3>Dismiss</h3>
+  <button id="t-dismiss">Dismiss Toaster</button>
+  <pre>
+    toast.dismiss()
+  </pre>
+  <script src="/dist/mu2.toaster.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+.mu2-toaster {
+    position: fixed;
+    z-index: 9999;
+    width: auto;
+    min-height: 0;
+    left: 50%;
+    -webkit-transition: all .4s cubic-bezier(.36, .66, .04, 1);
+    transition: all .4s cubic-bezier(.36, .66, .04, 1);
+    -webkit-backdrop-filter: blur(18px);
+    background: rgba(17, 17, 17, .7);
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    opacity: 0
+}
+
+.mu2-toaster.mu2-toaster-text {
+    top: 45%;
+    -webkit-transform: translateX(-50%) translateY(0);
+    transform: translateX(-50%) translateY(0);
+}
+
+.mu2-toaster.mu2-toaster-text.mu2-toaster-top {
+    top: 80px;
+    -webkit-transform: translateX(-50%) translateY(100%);
+    transform: translateX(-50%) translateY(100%)
+}
+
+.mu2-toaster.mu2-toaster-text.mu2-toaster-bottom {
+    top: auto;
+    bottom: 80px;
+    -webkit-transform: translateX(-50%) translateY(100%);
+    transform: translateX(-50%) translateY(100%)
+}
+
+.mu2-toaster.mu2-toaster-text.mu2-toaster-enter {
+    opacity: 1;
+    -webkit-transform: translateX(-50%) translateY(0);
+    transform: translateX(-50%) translateY(0)
+}
+
+.mu2-toaster.mu2-toaster-text.mu2-toaster-leave {
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(100%);
+    transform: translateX(-50%) translateY(100%)
+}
+
+.mu2-toaster.mu2-toaster-text .mu2-toaster-content {
+    padding-top: 8px;
+    padding-bottom: 8px
+}
+
+.mu2-toaster.mu2-toaster-error,
+.mu2-toaster.mu2-toaster-loading,
+.mu2-toaster.mu2-toaster-success,
+.mu2-toaster.mu2-toaster-warning {
+    top: 50%;
+    width: 116px;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%)
+}
+
+.mu2-toaster.mu2-toaster-error.mu2-toaster-enter,
+.mu2-toaster.mu2-toaster-loading.mu2-toaster-enter,
+.mu2-toaster.mu2-toaster-success.mu2-toaster-enter,
+.mu2-toaster.mu2-toaster-warning.mu2-toaster-enter {
+    opacity: 1
+}
+
+.mu2-toaster.mu2-toaster-error.mu2-toaster-leave,
+.mu2-toaster.mu2-toaster-loading.mu2-toaster-leave,
+.mu2-toaster.mu2-toaster-success.mu2-toaster-leave,
+.mu2-toaster.mu2-toaster-warning.mu2-toaster-leave {
+    opacity: 0
+}
+
+.mu2-toaster.mu2-toaster-error .mu2-toaster-content,
+.mu2-toaster.mu2-toaster-loading .mu2-toaster-content,
+.mu2-toaster.mu2-toaster-success .mu2-toaster-content,
+.mu2-toaster.mu2-toaster-warning .mu2-toaster-content {
+    font-size: 14px
+}
+
+.mu2-toaster.mu2-toaster-loading .mu2-icon {
+    -webkit-animation: mu2-toaster-rotating 1.2s linear infinite;
+    animation: mu2-toaster-rotating 1.2s linear infinite
+}
+
+.mu2-toaster .mu2-toaster-icon {
+    margin: 20px 0 0
+}
+
+.mu2-toaster .mu2-toaster-icon .mu2-icon {
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+    fill: #fff
+}
+
+.mu2-toaster .mu2-toaster-content {
+    margin: 0;
+    padding: 3px 15px 16px 15px;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: -apple-system-font,Helvetica Neue,sans-serif
+}
+
+@-webkit-keyframes mu2-toaster-rotating {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes mu2-toaster-rotating {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
